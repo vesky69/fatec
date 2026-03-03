@@ -13,6 +13,7 @@ label {
 }
 input {
     width: 15%;
+    height: 24px;
     border: solid 1px;
     border-radius: 5px;
 }
@@ -32,7 +33,21 @@ button {
     border: solid 1px;
     margin-top: 10px;
     width: 15.5%;
+    height: 24px;
 }
 button:hover {
     background-color: whitesmoke;
 }
+#formIMC {
+    background-color: #F6F7F9;;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+/*#result {
+    margin-top: 24px;
+    padding: 16px;
+    background: #F8F9FA;
+    border-left: 4px solid #007BFF; 
+    display: none; 
+} */

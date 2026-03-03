@@ -37,5 +37,6 @@ function IMC(event) {
         classification = "Abaixo do peso";
     }
 
-    document.getElementById("resultIMC").innerHTML = `${name} seu IMC é ${IMC.toFixed(2)} (${classification})`;
+    document.getElementById("resultIMC").innerText = `${name}, seu IMC é ${IMC.toFixed(2)} (${classification})`;
+    //console.log(`${name}, seu IMC é ${IMC.toFixed(2)} (${classification})`);
 }
