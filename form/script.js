@@ -17,6 +17,8 @@ function configDateLimit() {
 }
 document.addEventListener("DOMContentLoaded", configDateLimit);
 
+// Atalho para comentar em bloco: Shift + Alt + A
+
 /* function age(birth) {
     const dateBirth = new Date(birth);
     const today = new Date();
