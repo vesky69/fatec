@@ -11,13 +11,16 @@ label {
     font-weight: bold;
 
 }
-input {
+input, select {
     width: 100%;
     height: 24px;
     border: solid 1px;
     border-radius: 5px;
 }
 input:hover {
+    background-color: whitesmoke;
+}
+select:hover {
     background-color: whitesmoke;
 }
 #btn {
@@ -47,7 +50,7 @@ button {
 button:hover {
     background-color: whitesmoke;
 }
-#formIMC {
+#formINSS {
     background-color: #F6F7F9;;
     padding: 32px;
     border-radius: 16px;
