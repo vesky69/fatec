@@ -17,22 +17,33 @@ function configDateLimit() {
 }
 document.addEventListener("DOMContentLoaded", configDateLimit);
 
-// Atalho para comentar em bloco: Shift + Alt + A
+/**
+ * @author Júlia Dias <jdoc173@gmail.com>
+ * @since 2026-03-19
+ * @version 1.0.0
+ * @description Esta função calcula a idade com base na data de nascimento.
+ */
 
-/* function age(birth) {
+function age(birth) {
     const dateBirth = new Date(birth);
     const today = new Date();
 
     let age = today.getFullYear() - dateBirth.getFullYear()
     const month = today.getMonth() - dateBirth.getMonth()
 
-    if (month <0 || (month === 0 && today.getDate() < dateBirth.getDate() )) {
+    if (month < 0 || (month === 0 && today.getDate() < dateBirth.getDate())) {
         age--;
     }
 
     return age;
-} */
+}
 
+/**
+ * @author Júlia Dias <jdoc173@gmail.com>
+ * @since 2026-03-19
+ * @version 1.0.0
+ * @description Esta função calcula o IMC com base no peso e altura.
+ */
 function IMC(event) {
     event.preventDefault();
 
@@ -53,7 +64,7 @@ function IMC(event) {
         classification = "Abaixo do peso";
     }
 
-    document.getElementById("resultIMC").innerText = `${name}, seu IMC é ${IMC.toFixed(2)} (${classification})`;
+    document.getElementById("resultIMC").innerText = `${name} (${age(document.getElementById("date").value)} anos), seu IMC é ${IMC.toFixed(2)} (${classification})`;
     //console.log(`${name}, seu IMC é ${IMC.toFixed(2)} (${classification})`);
 
     const resultDiv = document.getElementById("result");

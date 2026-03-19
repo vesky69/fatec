@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cálculo INSS</title>
+    <title>Cálculo de salário</title>
 </head>
 <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="inss/style.css">
+    <link rel="stylesheet" href="salary/style.css">
 
     <a href="index.html">
         <button id="btn" title="Home"<i class="fa-solid fa-house"></i></button>
     </a>
 
     <div>
-        <form onsubmit="INSS(event)" id="formINSS">
-            <h1>Cálculo INSS</h1>
+        <form onsubmit="Salary(event)" id="formSalary">
+            <h1>Cálculo de salário</h1>
 
             <label for="job">Vínculo profissional:</label>
             <select required>
                 <option value="1">CLT</option>
                 <option value="2">MEI/PJ</option>
-                <option value="3">Autônomo/sócio (Pró-labore)</option>
+                <option value="3">Pró-labore</option>
             </select>
 
             <label for="salary">Faixa salarial:</label>
-            <input type="number" name="salary" min="1.621,00" required>
+            <input type="text" name="salary" placeholder="Ex: 1.500,00" pattern="^\d+([.,]\d+)?$" inputmode="decimal" required>
 
             <div class="buttons">
-                <button type="submit" id="calcINSS">Calcular</button>
-                <button type="reset" id="resetINSS">Limpar</button>
+                <button type="submit" id="calcSalary">Calcular</button>
+                <button type="reset" id="resetSalary">Limpar</button>
             </div>
         </form>
     </div>
     <div id="result">
         <p id="resultSalary"></p>
     </div>
-    <script src="inss/script.js"></script>
+    <script src="salary/script.js"></script>
 </body>
 </html>
